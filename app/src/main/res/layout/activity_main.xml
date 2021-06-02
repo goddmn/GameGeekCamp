@@ -4,77 +4,85 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/bg_welcome"
     android:orientation="vertical"
-   android:background="@drawable/bg_welcome"
     tools:context=".MainActivity">
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_gravity="center"
         android:text="Добро Пожаловать!"
         android:textColor="#22FF00"
-        android:textSize="34sp"
-        android:layout_gravity="center" />
-
+        android:textSize="34sp" />
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="100dp"
         android:text="4 фото 1 слово"
         android:textColor="@color/white"
-        android:textSize="28sp"
+        android:textSize="30sp"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:gravity="center">
+
+        <ImageView
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_marginRight="8dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/img_welcome1" />
+
+        <ImageView
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_marginLeft="8dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/img_welcome2" />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:gravity="center">
+
+        <ImageView
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_marginRight="8dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/img_welcome3" />
+
+        <ImageView
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_marginLeft="8dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/img_welcome4" />
+
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_play"
+        android:layout_width="320dp"
+        android:layout_height="wrap_content"
         android:layout_gravity="center"
-        android:layout_marginTop="64dp"
-        />
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:gravity="center"
-        >
-
-        <ImageView
-            android:layout_width="120dp"
-            android:layout_height="120dp"
-            android:src="@drawable/img_welcome1"
-            android:scaleType="centerCrop"
-            />
-
-        <ImageView
-            android:layout_width="120dp"
-            android:layout_height="120dp"
-            android:src="@drawable/img_welcome2"
-            android:scaleType="centerCrop"
-            />
-
-    </LinearLayout>
-
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:gravity="center"
-        >
-
-        <ImageView
-            android:layout_width="120dp"
-            android:layout_height="120dp"
-            android:src="@drawable/img_welcome3"
-            android:scaleType="centerCrop"
-            />
-
-        <ImageView
-            android:layout_width="120dp"
-            android:layout_height="120dp"
-            android:src="@drawable/img_welcome4"
-            android:scaleType="centerCrop"
-            />
-
-    </LinearLayout>
-
-
-
-
-
+        android:layout_marginTop="32dp"
+        android:backgroundTint="#FF0000"
+        android:padding="8dp"
+        android:text="Играть"
+        android:textAllCaps="false"
+        android:textSize="26sp"
+        app:cornerRadius="16dp" />
 
 </LinearLayout>
